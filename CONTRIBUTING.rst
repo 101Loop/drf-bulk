@@ -76,7 +76,7 @@ Ready to contribute? Here's how to set up ``drf-bulk`` for local development.
    Now you can make your changes locally.
 
 5. When you're done making changes, check that your changes pass
-   flake8 and the tests, including testing other Python versions with tox::
+   black and the tests, including testing other Python versions with tox::
 
     $ make lint
     $ make test-all
@@ -93,11 +93,11 @@ Pull Request Guidelines
 -----------------------
 
 Before you submit a pull request, check that it meets these guidelines:
-
-1. The pull request should include tests.
-2. If the pull request adds functionality, the docs should be updated.
+1. Code should follow PEP8 guidelines.
+2. The pull request should include tests.
+3. If the pull request adds functionality, the docs should be updated.
    Put your new functionality into a function with a docstring,
    and add the feature to the list in README.rst.
-3. The pull request should work for Python 2.7, 3.4, and for PyPy.
+4. The pull request should work for Python 2.7, 3.4, and for PyPy.
    Check https://travis-ci.org/miki725/django-rest-framework-bulk/pull_requests
    and make sure that the tests pass for all supported Python versions.
