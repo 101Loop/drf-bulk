@@ -5,8 +5,7 @@ from rest_framework_bulk.serializers import BulkListSerializer, BulkSerializerMi
 from .models import SimpleModel
 
 
-class SimpleSerializer(BulkSerializerMixin,  # only required in DRF3
-                       ModelSerializer):
+class SimpleSerializer(BulkSerializerMixin, ModelSerializer):  # only required in DRF3
     class Meta(object):
         model = SimpleModel
         # only required in DRF3

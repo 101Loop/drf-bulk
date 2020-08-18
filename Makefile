@@ -11,7 +11,7 @@ help:
 	@echo "clean-pyc - remove Python file artifacts"
 	@echo "clean-test - remove test and coverage artifacts"
 	@echo "clean-test-all - remove all test-related artifacts including tox"
-	@echo "lint - check style with flake8"
+	@echo "lint - check style with black"
 	@echo "test - run tests quickly with the default Python"
 	@echo "test-coverage - run tests with coverage report"
 	@echo "test-all - run tests on every Python version with tox"
@@ -46,7 +46,7 @@ clean-test-all: clean-test
 	rm -rf .tox/
 
 lint:
-	flake8 rest_framework_bulk
+	black --check rest_framework_bulk
 
 test:
 	python tests/manage.py test ${TEST_FLAGS}

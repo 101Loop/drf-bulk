@@ -6,10 +6,6 @@ from .views import SimpleViewSet
 
 
 router = BulkRouter()
-router.register('simple', SimpleViewSet, 'simple')
+router.register("simple", SimpleViewSet, "simple")
 
-urlpatterns = patterns(
-    '',
-
-    url(r'^api/', include(router.urls, namespace='api')),
-)
+urlpatterns = patterns("", url(r"^api/", include(router.urls, namespace="api")),)

@@ -6,9 +6,9 @@ from rest_framework.response import Response
 
 
 __all__ = [
-    'BulkCreateModelMixin',
-    'BulkDestroyModelMixin',
-    'BulkUpdateModelMixin',
+    "BulkCreateModelMixin",
+    "BulkDestroyModelMixin",
+    "BulkUpdateModelMixin",
 ]
 
 
@@ -51,9 +51,13 @@ class BulkUpdateModelMixin(object):
     def get_object(self, queryset=None):
         lookup_url_kwarg = self.lookup_url_kwarg or self.lookup_field
 
-        if any((lookup_url_kwarg in self.kwargs,
+        if any(
+            (
+                lookup_url_kwarg in self.kwargs,
                 self.pk_url_kwarg in self.kwargs,
-                self.slug_url_kwarg in self.kwargs)):
+                self.slug_url_kwarg in self.kwargs,
+            )
+        ):
             return super(BulkUpdateModelMixin, self).get_object(queryset)
 
         # If the lookup_url_kwarg (or other deprecated variations)
@@ -67,13 +71,15 @@ class BulkUpdateModelMixin(object):
         return
 
     def bulk_update(self, request, *args, **kwargs):
-        partial = kwargs.pop('partial', False)
+        partial = kwargs.pop("partial", False)
 
         # restrict the update to the filtered queryset
-        serializer = self.get_serializer(self.filter_queryset(self.get_queryset()),
-                                         data=request.DATA,
-                                         many=True,
-                                         partial=partial)
+        serializer = self.get_serializer(
+            self.filter_queryset(self.get_queryset()),
+            data=request.DATA,
+            many=True,
+            partial=partial,
+        )
 
         if serializer.is_valid():
             try:
@@ -91,7 +97,7 @@ class BulkUpdateModelMixin(object):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def partial_bulk_update(self, request, *args, **kwargs):
-        kwargs['partial'] = True
+        kwargs["partial"] = True
         return self.bulk_update(request, *args, **kwargs)
 
 

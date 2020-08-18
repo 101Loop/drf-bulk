@@ -5,9 +5,9 @@ from rest_framework.response import Response
 
 
 __all__ = [
-    'BulkCreateModelMixin',
-    'BulkDestroyModelMixin',
-    'BulkUpdateModelMixin',
+    "BulkCreateModelMixin",
+    "BulkDestroyModelMixin",
+    "BulkUpdateModelMixin",
 ]
 
 
@@ -61,7 +61,7 @@ class BulkUpdateModelMixin(object):
         return
 
     def bulk_update(self, request, *args, **kwargs):
-        partial = kwargs.pop('partial', False)
+        partial = kwargs.pop("partial", False)
 
         # restrict the update to the filtered queryset
         serializer = self.get_serializer(
@@ -75,7 +75,7 @@ class BulkUpdateModelMixin(object):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def partial_bulk_update(self, request, *args, **kwargs):
-        kwargs['partial'] = True
+        kwargs["partial"] = True
         return self.bulk_update(request, *args, **kwargs)
 
     def perform_update(self, serializer):
