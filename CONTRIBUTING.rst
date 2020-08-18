@@ -13,7 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/miki725/django-rest-framework-bulk/issues.
+Report bugs at https://github.com/101loop/drf-bulk/issues.
 
 If you are reporting a bug, please include:
 
@@ -44,7 +44,7 @@ Submit Feedback
 ~~~~~~~~~~~~~~~
 
 The best way to send feedback is to file an issue at
-https://github.com/miki725/django-rest-framework-bulk/issues.
+https://github.com/101loop/drf-bulk/issues.
 
 If you are proposing a feature:
 
@@ -56,12 +56,12 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up ``django-rest-framework-bulk`` for local development.
+Ready to contribute? Here's how to set up ``drf-bulk`` for local development.
 
-1. Fork the ``django-rest-framework-bulk`` repo on GitHub.
+1. Fork the ``drf-bulk`` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/django-rest-framework-bulk.git
+    $ git clone git@github.com:your_name_here/drf-bulk.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 

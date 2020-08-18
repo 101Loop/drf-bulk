@@ -27,13 +27,13 @@ test_requirements = (
 )
 
 setup(
-    name='djangorestframework-bulk',
+    name='drf-bulk',
     version=__version__,
     author=__author__,
-    author_email='miroslav@miki725.com',
+    author_email='devs@101loop.com',
     description='Django REST Framework bulk CRUD view mixins',
     long_description='\n\n'.join([readme, history, authors, licence]),
-    url='https://github.com/miki725/django-rest-framework-bulk',
+    url='https://github.com/101loop/drf-bulk',
     license='MIT',
     keywords='django',
     packages=find_packages(),

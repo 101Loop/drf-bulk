@@ -14,3 +14,10 @@ _build/
 
 *zip
 *tar.gz
+
+# Virtualenvs
+.venv
+venv
+
+# VS Code
+.vscode

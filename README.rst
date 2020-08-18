@@ -1,11 +1,8 @@
-Django REST Framework Bulk
-==========================
+Django REST Framework - Bulk
+============================
 
-.. image:: https://badge.fury.io/py/djangorestframework-bulk.png
-    :target: http://badge.fury.io/py/djangorestframework-bulk
-
-.. image:: https://travis-ci.org/miki725/django-rest-framework-bulk.svg?branch=master
-    :target: https://travis-ci.org/miki725/django-rest-framework-bulk
+.. .. image:: https://travis-ci.org/miki725/django-rest-framework-bulk.svg?branch=master
+..     :target: https://travis-ci.org/miki725/django-rest-framework-bulk
 
 Django REST Framework bulk CRUD view mixins.
 
@@ -29,14 +26,15 @@ Requirements
 
 Installing
 ----------
+**Currently can't install using pip, as we will update this project a little bit, until then you can install using source code or using the original repo.**
 
-Using pip::
+.. Using pip::
 
-    $ pip install djangorestframework-bulk
+..     $ pip install djangorestframework-bulk
 
-or from source code::
+Install from source code::
 
-    $ pip install -e git+http://github.com/miki725/django-rest-framework-bulk#egg=djangorestframework-bulk
+    $ pip install -e git+https://github.com/101Loop/drf-bulk#egg=drf-bulk
 
 Example
 -------
@@ -182,3 +180,8 @@ please refer to Django REST
 `docs <http://www.django-rest-framework.org/api-guide/filtering>`_.
 Either way, please use bulk deletes with extreme caution since they
 can be dangerous.
+
+
+Acknowledgements
+----------------
+This project began as a fork of `Django REST Framework Bulk <https://github.com/miki725/django-rest-framework-bulk>`_. Big thanks to everyone who contributed to that repo!

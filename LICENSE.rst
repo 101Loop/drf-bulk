@@ -1,7 +1,7 @@
 License
 -------
 
-Source code can be found at `Github <https://github.com/miki725/django-rest-framework-bulk>`_.
+Source code can be found at `Github <https://github.com/101loop/drf-bulk>`_.
 
 `The MIT License (MIT) <http://opensource.org/licenses/MIT>`_::
 

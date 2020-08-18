@@ -1,5 +1,5 @@
 __version__ = '0.2.1'
-__author__ = 'Miroslav Shubernetskiy'
+__author__ = '101 Loop'
 
 try:
     from .generics import *  # noqa
