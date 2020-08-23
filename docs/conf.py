@@ -63,3 +63,12 @@ html_theme = 'alabaster'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_theme_options = {
+    'description': 'Django REST Framework bulk CRUD view mixins.',
+    'github_banner': 'true',
+    'github_user': '101loop',
+    'github_repo': 'drf-bulk',
+    'github_button': 'true',
+    'github_type': 'star',
+}
