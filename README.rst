@@ -27,7 +27,7 @@ within the framework. That is the purpose of this project.
 Getting Help
 ============
 
-Documentation for django-model-utils is available
+Documentation for ``drf-bulk`` is available
 https://drf-bulk.readthedocs.io/
 
 Contributing
