@@ -11,6 +11,7 @@ help:
 	@echo "clean-pyc - remove Python file artifacts"
 	@echo "clean-test - remove test and coverage artifacts"
 	@echo "clean-test-all - remove all test-related artifacts including tox"
+	@echo "docs - build documentation"
 	@echo "lint - check style with black"
 	@echo "test - run tests quickly with the default Python"
 	@echo "test-coverage - run tests with coverage report"
@@ -44,6 +45,11 @@ clean-test:
 
 clean-test-all: clean-test
 	rm -rf .tox/
+
+docs: documentation
+
+documentation: init
+	python setup.py build_sphinx
 
 lint:
 	black --check rest_framework_bulk
