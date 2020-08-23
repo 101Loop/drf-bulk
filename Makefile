@@ -46,9 +46,7 @@ clean-test:
 clean-test-all: clean-test
 	rm -rf .tox/
 
-docs: documentation
-
-documentation: init
+docs:
 	python setup.py build_sphinx
 
 lint:
